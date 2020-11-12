@@ -1,25 +1,21 @@
-<!DOCTYPE html>
 <html>
-<body>
-
-<h1>The template Element</h1>
-
-<p>Click the button below to display the hidden content from the template element.</p>
-
-<button onclick="showContent()">Show hidden content</button>
-
-<template>
-  <h2>Flower</h2>
-  <img src="flower.jpg" width="214" height="204">
-</template>
-
-<script>
-function showContent() {
-  var temp = document.getElementsByTagName("template")[0];
-  var clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="snake.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+  </head>
+  <body>
+  </body>
 </html>
