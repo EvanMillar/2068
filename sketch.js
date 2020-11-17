@@ -31,17 +31,18 @@ function mousePressed() {
 
 function draw() {
     background(51);
-    if (s.eat(food)) {
+    if (s.eat2(food,20)) {
         pickLocation();
     }
-    if (s.eat(food2)) {
+    if (s.eat2(food2,40)) {
         pickLocation2();
     }
     s.death();
     s.update();
     s.show();
-    fill(255, 0, 100);
+    fill('yellow')
     rect(food.x, food.y, scl, scl);
+    fill('blue')
     rect(food2.x, food2.y, scl2, scl2);
 }
 
