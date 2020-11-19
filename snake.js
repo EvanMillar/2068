@@ -62,7 +62,7 @@ function Snake() {
             this.tail[this.total - 1] = createVector(this.x, this.y);
         }
 
-        console.log('death');
+        
 
         this.x = this.x + this.xspeed * scl;
         this.y = this.y + this.yspeed * scl;

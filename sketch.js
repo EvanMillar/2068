@@ -42,7 +42,7 @@ function draw() {
     s.death();
     s.update();
     s.show();
-    fill('yellow')
+    fill('red')
     rect(food.x, food.y, scl, scl);
     fill('blue')
     rect(food2.x, food2.y, scl2, scl2);
@@ -58,7 +58,7 @@ function keyPressed() {
     } else if (keyCode === LEFT_ARROW) {
       console.log("L")
         s.dir(-1, 0);
-    } else if (keyCode === w) {
+    } else if (keyCode === "w") {
       console.log("s")
         s.total(+1)
     }
