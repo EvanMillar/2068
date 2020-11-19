@@ -58,7 +58,7 @@ function keyPressed() {
     } else if (keyCode === LEFT_ARROW) {
       console.log("L")
         s.dir(-1, 0);
-    } else if (keyCode === "w") {
+    } else if (keyCode === "Key-W") {
       console.log("s")
         s.total(+1)
     }
