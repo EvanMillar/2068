@@ -17,15 +17,13 @@ function Snake() {
     };
 
     this.eat2 = function(pos,size) {
-        //console.log('JLM');
+      
         myx = pos.x + size;
         myy = pos.y + size;
-        //console.log("Food Left Corner :" + str(pos.x) + "," + str(pos.y));
-        //console.log("Food Right Corner:" + str(myx) + "," + str(myy));
-        //console.log("Snake Corner     :" + str(this.x) + "," + str(this.y));
 
 
-        //return false
+
+       
 
         if(pos.x-1 <= this.x && 
           this.x <= myx-1 && 
