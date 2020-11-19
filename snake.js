@@ -21,17 +21,17 @@ function Snake() {
         myx = pos.x + size;
         myy = pos.y + size;
 
-
-
-       
-
         if(pos.x-1 <= this.x && 
           this.x <= myx-1 && 
           pos.y-1 <= this.y && 
           this.y <= myy-1) {
             console.log("HIT");
             this.total++;
+            console.log("add");
+
+
            return true;
+
         } else {
             return false;
         }
@@ -61,6 +61,8 @@ function Snake() {
         if (this.total >= 1) {
             this.tail[this.total - 1] = createVector(this.x, this.y);
         }
+
+        console.log('death');
 
         this.x = this.x + this.xspeed * scl;
         this.y = this.y + this.yspeed * scl;

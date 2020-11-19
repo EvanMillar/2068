@@ -31,11 +31,13 @@ function mousePressed() {
 
 function draw() {
     background(51);
-    if (s.eat2(food,20)) {
+    if (s.eat(food,20)) {
         pickLocation();
+        console.log("location picked")
     }
     if (s.eat2(food2,40)) {
         pickLocation2();
+        console.log("location picked")
     }
     s.death();
     s.update();
@@ -54,6 +56,10 @@ function keyPressed() {
     } else if (keyCode === RIGHT_ARROW) {
         s.dir(1, 0);
     } else if (keyCode === LEFT_ARROW) {
+      console.log("L")
         s.dir(-1, 0);
+    } else if (keyCode === w) {
+      console.log("s")
+        s.total(+1)
     }
 }
